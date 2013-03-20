@@ -28,10 +28,15 @@ describe TodoList do
     list.last.to_s.should == item_description
   end
 
+ 
   it "should have the added item uncompleted" do
     list << item_description
     list.completed?(0).should be_false
   end
+  
+  
+
+
 
   context "with one item" do
     let(:items)             { [item_description] }
