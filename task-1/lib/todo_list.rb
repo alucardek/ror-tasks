@@ -17,7 +17,21 @@ class TodoList
 		  
 		def complete
 		  @complete=true
-		end
+    end
+
+    def uncomplete
+      @complete=false
+    end
+
+    def toggle
+      @complete= @complete ? false : true
+    end
+
+    def description=(description)
+      @item_description=description
+    end
+
+
 	  
 	end
 
@@ -41,23 +55,19 @@ class TodoList
   def <<(item_description)
   	@items << Item.new(item_description)
   end
-  
-  def last
-  	@items.last
+
+  def at(index)
+    @items.at(index)
   end
-  
+
   def first
   	@items.first
   end
-  
-  def completed?(index)
-	@items[index].completed?
+
+  def last
+    @items.last
   end
-  
-  def complete(index)
-  	@items[index].complete
-  end
-  
+
   def show_completed
     completed=[]
     @items.each do |item|
@@ -82,6 +92,20 @@ class TodoList
     else 
       @items.delete_at(param)
     end
-  end	
+  end
+
+  def reverse(first=nil,second=nil)
+    if first && second
+      @items[first..second]=@items[first..second].reverse
+    else
+      @items.reverse!
+    end
+  end
+
+  def sort_by!(param)
+    if param=="names"
+      @items.sort_by! {|items| items.to_s}
+    end
+  end
 
 end

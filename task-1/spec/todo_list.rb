@@ -8,7 +8,7 @@ describe TodoList do
   let(:items)               { [] }
   let(:item_description)    { "Buy toilet paper" }
   let(:second_description)  { "Make ruby homework" }
-  let(:third_description)	  { "Optimaze it" }
+  let(:third_description)	  { "Aww..Optimaze it" }
 
 
   context "with no items" do
@@ -35,7 +35,7 @@ describe TodoList do
 
     it "should have the added item uncompleted" do
       list << item_description
-      list.completed?(0).should be_false
+      list.at(0).completed?.should be_false
     end
   end
   
@@ -48,17 +48,21 @@ describe TodoList do
       list.size.should == 1
     end
 
+    it "should select one item at particular position" do
+      list.at(0).to_s.should == item_description
+    end
+
     it "should have the first and the last item the same" do
       list.first.to_s.should == list.last.to_s
     end
 
     it "should not have the first item completed" do
-      list.completed?(0).should be_false
+      list.at(0).completed?.should be_false
     end
 
     it "should change the state of a completed item" do
-      list.complete(0)
-      list.completed?(0).should be_true
+      list.at(0).complete
+      list.at(0).completed?.should be_true
     end
   end
   
@@ -66,16 +70,16 @@ describe TodoList do
   	let(:items)            { [item_description, second_description, third_description] }
 
     it "should return completed items" do
-      list.complete(2)
-      list.complete(1)
+      list.at(2).complete
+      list.at(1).complete
       completed=list.show_completed
       completed.size.should == 2
       completed.first.to_s.should == second_description
     end
 
     it "should return uncompleted items" do
-      list.complete(0)
-      list.complete(2)
+      list.at(0).complete
+      list.at(2).complete
       uncompleted = list.show_uncompleted
       uncompleted.first.to_s.should == second_description
       uncompleted.size.should ==1
@@ -90,13 +94,50 @@ describe TodoList do
     end
 
     it "should remove all completed items" do
-      list.complete(0)
-      list.complete(2)
+      list.at(0).complete
+      list.at(0).complete
       list.remove("completed")
       completed=list.show_completed
       completed.should be_empty
     end
-	
+
+    it "should revert order of two items" do
+      list.reverse(0,1)
+      list.first.to_s.should == second_description
+    end
+
+    it "should revert the order of all items" do
+      list.reverse
+      list.first.to_s.should == third_description
+      list.last.to_s.should == item_description
+    end
+
+    it "should toggle the state of an item" do
+      list.at(1).complete
+      list.show_completed.first.to_s.should == second_description
+      list.at(0).toggle
+      list.at(1).toggle
+      list.show_completed.first.to_s.should == item_description
+    end
+
+    it "should set the state of the item to uncompleted" do
+      list.at(1).complete
+      list.at(1).uncomplete
+      list.show_completed.should be_empty
+    end
+
+    it "should change the description of an item" do
+      list.at(2).description="aleluja"
+      list.last.to_s.should == "aleluja"
+    end
+
+    it "should sort the items by name" do
+      list.sort_by!("names")
+      list.at(2).to_s.should == second_description
+    end
+
+    it "should convert the list to text with the following format" do
+    end
   end
   
 end
