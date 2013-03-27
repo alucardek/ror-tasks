@@ -1,35 +1,33 @@
 class TodoList
+
 	class Item 
 	
-	  def initialize(item_description)
-		@item_description = item_description
-		@complete=false
-	  end
-	  
-	  def to_s
-	  	@item_description.to_s
-	  end
-	  
-	  def completed?
-		@complete
-	  end
-	  
-	  def complete
-		@complete=true
-	  end
+		def initialize(item_description)
+		  @item_description = item_description
+		  @complete=false
+		end
+		  
+		def to_s
+		  @item_description.to_s
+		end
+		  
+		def completed?
+		  @complete
+		end
+		  
+		def complete
+		  @complete=true
+		end
 	  
 	end
-
 
   # Initialize the TodoList with +items+ (empty by default).
   def initialize(items=[])
-    if items==nil then raise(IllegalArgument) end
+    raise(IllegalArgument) if items.nil?
    	@items=[]
-	
 	items.each do |item| 
 	  @items << Item.new(item)
-	end
-	
+	end	
   end
   
   def empty?
@@ -52,16 +50,38 @@ class TodoList
   	@items.first
   end
   
-  def completed?(num)
-	@items[num].completed?
+  def completed?(index)
+	@items[index].completed?
   end
   
-  def complete(num)
-  	@items[num].complete
+  def complete(index)
+  	@items[index].complete
   end
   
+  def show_completed
+    completed=[]
+    @items.each do |item|
+	  completed << item if item.completed?
+	end
+	completed
+  end
+  
+  def show_uncompleted
+    uncompleted=[]
+    @items.each do |item|
+	  uncompleted << item unless item.completed?
+	end
+	uncompleted
+  end
+
+  def remove(param)
+  	if param=="completed"
+      @items.delete_if {|item| item.completed?} 
+    elsif param=="uncompleted" 
+      @items.delete_if {|item| (item.completed? == false)}
+    else 
+      @items.delete_at(param)
+    end
+  end	
+
 end
-
-
-
-
