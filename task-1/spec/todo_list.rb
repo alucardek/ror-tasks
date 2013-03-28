@@ -137,6 +137,11 @@ describe TodoList do
     end
 
     it "should convert the list to text with the following format" do
+      list.at(1).complete
+      list_converted=[]
+      list_converted=list.convertx
+      list_converted.at(1).to_s.should == "[x] "+second_description
+      list_converted.at(0).to_s.should == "[ ] "+item_description
     end
   end
   

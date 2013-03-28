@@ -108,4 +108,8 @@ class TodoList
     end
   end
 
+  def convertx
+    @items.map {|item| item.completed? ? "[x] "+ item.to_s : "[ ] "+item.to_s }
+  end
+
 end
