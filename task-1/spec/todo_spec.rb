@@ -36,10 +36,10 @@ describe TodoList do
 
     it "should have the added item uncompleted" do
       list << item_description
-      list.at(0).completed?.should be_false
+      list.completed?(0).should be_false
     end
   end
-  
+
   context "with one item" do
     let(:items)             { [item_description] }
 
@@ -58,29 +58,29 @@ describe TodoList do
     end
 
     it "should not have the first item completed" do
-      list.at(0).completed?.should be_false
+      list.completed?(0).should be_false
     end
 
     it "should change the state of a completed item" do
-      list.at(0).complete
-      list.at(0).completed?.should be_true
+      list.complete(0)
+      list.completed?(0).should be_true
     end
   end
-  
+
   context "with many items" do
-  	let(:items)            { [item_description, second_description, third_description] }
+    let(:items)            { [item_description, second_description, third_description] }
 
     it "should return completed items" do
-      list.at(2).complete
-      list.at(1).complete
+      list.complete(2)
+      list.complete(1)
       completed=list.show_completed
       completed.size.should == 2
       completed.first.to_s.should == second_description
     end
 
     it "should return uncompleted items" do
-      list.at(0).complete
-      list.at(2).complete
+      list.complete(0)
+      list.complete(2)
       uncompleted = list.show_uncompleted
       uncompleted.first.to_s.should == second_description
       uncompleted.size.should ==1
@@ -95,8 +95,8 @@ describe TodoList do
     end
 
     it "should remove all completed items" do
-      list.at(0).complete
-      list.at(0).complete
+      list.complete(0)
+      list.complete(0)
       list.remove("completed")
       completed=list.show_completed
       completed.should be_empty
@@ -114,16 +114,16 @@ describe TodoList do
     end
 
     it "should toggle the state of an item" do
-      list.at(1).complete
+      list.complete(1)
       list.show_completed.first.to_s.should == second_description
-      list.at(0).toggle
-      list.at(1).toggle
+      list.toggle(0)
+      list.toggle(1)
       list.show_completed.first.to_s.should == item_description
     end
 
     it "should set the state of the item to uncompleted" do
-      list.at(1).complete
-      list.at(1).uncomplete
+      list.complete(1)
+      list.uncomplete(1)
       list.show_completed.should be_empty
     end
 
@@ -138,12 +138,12 @@ describe TodoList do
     end
 
     it "should convert the list to text with the following format" do
-      list.at(1).complete
+      list.complete(1)
       list_converted=[]
       list_converted=list.convertx
       list_converted.at(1).to_s.should == "[x] "+second_description
       list_converted.at(0).to_s.should == "[ ] "+item_description
     end
   end
-  
+
 end
