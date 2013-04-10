@@ -2,24 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e030e3e-b47d-467c-8350-7ed7bf558f4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task-2/spec/todo_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-1/Gemfile.lock" afterPath="$PROJECT_DIR$/task-1/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-2/Gemfile.lock" afterPath="$PROJECT_DIR$/task-2/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-1/Gemfile" afterPath="$PROJECT_DIR$/task-1/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-1/.idea/task-1.iml" afterPath="$PROJECT_DIR$/task-1/.idea/task-1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-1/lib/todo_list.rb" afterPath="$PROJECT_DIR$/task-1/lib/todo_list.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-1/spec/todo_list.rb" afterPath="$PROJECT_DIR$/task-1/spec/todo_list.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-2/lib/todo_list.rb" afterPath="$PROJECT_DIR$/task-2/lib/todo_list.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/task-1/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-2/spec/todo_spec.rb" afterPath="$PROJECT_DIR$/task-2/spec/todo_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ror-tasks.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365454725132" ignored="false" />
-    <file path="/todo_list.rb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365459284821" ignored="false" />
-    <file path="/Ruby Console" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1364986229807" ignored="false" />
+    <file path="/Dummy.txt" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365523340971" ignored="false" />
+    <file path="/todo_list.rb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365558629950" ignored="false" />
+    <file path="/Ruby Console" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365557838819" ignored="false" />
     <file path="/Gemfile" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1364987967754" ignored="false" />
     <file path="/todo2_spec.rb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365010760889" ignored="false" />
-    <file path="/todo_spec.rb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365070450993" ignored="false" />
+    <file path="/todo_spec.rb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365557641733" ignored="false" />
+    <file path="$PROJECT_DIR$/../komada/parametr/parametr/app/views/static/certificates.erb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365523480653" ignored="false" />
+    <file path="D:/projekty/strona taty/ROR/app/views/content/survey.html.erb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365524416944" ignored="false" />
+    <file path="D:/projekty/strona taty/ROR/app/controllers/content_controller.rb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365523948243" ignored="false" />
+    <file path="/content_controller.rb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365523947102" ignored="false" />
+    <file path="D:/projekty/strona taty/ROR/config/routes.rb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365523989047" ignored="false" />
+    <file path="/routes.rb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365523988301" ignored="false" />
+    <file path="/survey.html.erb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365524328061" ignored="false" />
+    <file path="D:/projekty/strona taty/ROR/app/views/layouts/application.html.erb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365524540338" ignored="false" />
+    <file path="/application.html.erb" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365524539230" ignored="false" />
+    <file path="D:/projekty/strona taty/ROR/public/javascripts/my.js" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365529253882" ignored="false" />
+    <file path="/my.js" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365529253251" ignored="false" />
+    <file path="D:/projekty/strona taty/ROR/public/stylesheets/ankieta.css" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365529653993" ignored="false" />
+    <file path="/ankieta.css" changelist="6e030e3e-b47d-467c-8350-7ed7bf558f4d" time="1365529652751" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,19 +43,30 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="todo_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="todo_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task-2/spec/todo_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="32" selection-start="2210" selection-end="2210" vertical-scroll-proportion="0.3148148">
-              <folding />
+            <state line="174" column="0" selection-start="5136" selection-end="5136" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#525#601#0" expanded="false" />
+                <element signature="e#629#964#0" expanded="false" />
+                <element signature="e#1000#2888#0" expanded="false" />
+                <element signature="e#2931#3086#0" expanded="false" />
+                <element signature="e#3003#3080#0" expanded="false" />
+                <element signature="e#3117#3304#0" expanded="false" />
+                <element signature="e#3343#3724#0" expanded="false" />
+                <element signature="e#4831#5134#0" expanded="false" />
+                <element signature="e#5175#5478#0" expanded="false" />
+                <element signature="e#5564#5899#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo_list.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="todo_list.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task-2/lib/todo_list.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="29" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
+            <state line="22" column="39" selection-start="529" selection-end="529" vertical-scroll-proportion="0.505291">
               <folding />
             </state>
           </provider>
@@ -78,8 +96,8 @@
         <option value="$PROJECT_DIR$/task-2/lib/todo_spec.rb" />
         <option value="$PROJECT_DIR$/task-1/spec/todo_spec.rb" />
         <option value="$PROJECT_DIR$/task-1/lib/todo_list.rb" />
-        <option value="$PROJECT_DIR$/task-2/lib/todo_list.rb" />
         <option value="$PROJECT_DIR$/task-2/spec/todo_spec.rb" />
+        <option value="$PROJECT_DIR$/task-2/lib/todo_list.rb" />
       </list>
     </option>
   </component>
@@ -131,6 +149,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -201,20 +220,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.21461898" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="settings.github" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.searchVisible" value="true" />
+    <property name="options.lastSelected" value="settings.github" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../komada/parametr" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="RSpec.TodoList should not accepting a nil item">
-    <configuration default="false" name="TodoList with empty title of the item" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+  <component name="RunManager" selected="RSpec.TodoList with social network">
+    <configuration default="false" name="TodoList with social network should notify a social network if an item is completed" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="ror-tasks" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -233,7 +251,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/task-2/spec/todo_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="TodoList with empty title of the item" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="TodoList with social network should notify a social network if an item is completed" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -274,7 +292,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="TodoList should return nil for the first and the last item if the DB is empty" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="TodoList with social network should notify a social network if an item is added to the list" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="ror-tasks" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -293,7 +311,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/task-2/spec/todo_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="TodoList should return nil for the first and the last item if the DB is empty" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="TodoList with social network should notify a social network if an item is added to the list" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -304,7 +322,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="TodoList should raise an exception when changing the item state if the item is nil" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="TodoList with social network" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="ror-tasks" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -323,7 +341,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/task-2/spec/todo_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="TodoList should raise an exception when changing the item state if the item is nil" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="TodoList with social network" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -334,32 +352,21 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="TodoList should not accepting a nil item" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+    <configuration default="false" name="IRB console" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="ror-tasks" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/task-2" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
+      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/task-2/spec/todo_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="TodoList should not accepting a nil item" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="D:/RailsInstaller/Ruby1.9.3/bin/irb" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--prompt simple" />
+      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="false" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -446,18 +453,18 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.TodoList with empty title of the item" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.TodoList with social network should notify a social network if an item is completed" />
       <item index="1" class="java.lang.String" itemvalue="RSpec.TodoList" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.TodoList should return nil for the first and the last item if the DB is empty" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.TodoList should raise an exception when changing the item state if the item is nil" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.TodoList should not accepting a nil item" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.TodoList with social network should notify a social network if an item is added to the list" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.TodoList with social network" />
+      <item index="4" class="java.lang.String" itemvalue="IRB console.IRB console" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.TodoList should not accepting a nil item" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.TodoList should raise an exception when changing the item state if the item is nil" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.TodoList should return nil for the first and the last item if the DB is empty" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.TodoList with empty title of the item" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.TodoList with social network" />
+        <item index="1" class="java.lang.String" itemvalue="IRB console.IRB console" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.TodoList with social network should notify a social network if an item is completed" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.TodoList with social network should notify a social network if an item is added to the list" />
         <item index="4" class="java.lang.String" itemvalue="RSpec.TodoList" />
       </list>
     </recent_temporary>
@@ -491,13 +498,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15" sideWeight="0.64444447" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16818182" sideWeight="0.6622951" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17045455" sideWeight="0.6622951" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.64444447" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -566,14 +573,25 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/task-2/spec/todo_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="15" selection-start="2052" selection-end="2052" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#525#601#0" expanded="false" />
+            <element signature="e#629#964#0" expanded="false" />
+            <element signature="e#1000#2888#0" expanded="false" />
+            <element signature="e#2931#3086#0" expanded="false" />
+            <element signature="e#3003#3080#0" expanded="false" />
+            <element signature="e#3117#3304#0" expanded="false" />
+            <element signature="e#3343#3724#0" expanded="false" />
+            <element signature="e#4831#5134#0" expanded="false" />
+            <element signature="e#5175#5478#0" expanded="false" />
+            <element signature="e#5564#5899#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -587,15 +605,24 @@
     <entry file="file://$PROJECT_DIR$/task-2/spec/todo_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="63" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#525#601#0" expanded="false" />
+            <element signature="e#629#964#0" expanded="false" />
+            <element signature="e#1000#2888#0" expanded="false" />
+            <element signature="e#2931#3086#0" expanded="false" />
+            <element signature="e#3003#3080#0" expanded="false" />
+            <element signature="e#3117#3304#0" expanded="false" />
+            <element signature="e#3343#3724#0" expanded="false" />
+            <element signature="e#4831#5134#0" expanded="false" />
+            <element signature="e#5175#5478#0" expanded="false" />
+            <element signature="e#5564#5899#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task-2/lib/exceptions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task-2/spec/todo_list.rb">
@@ -612,9 +639,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task-1/lib/todo_list.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="31" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="90" column="31" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task-2/spec/spec_helper.rb">
@@ -624,9 +649,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task-1/spec/todo_list.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="705" selection-end="705" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="25" column="17" selection-start="705" selection-end="705" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task-1/Gemfile">
@@ -636,42 +659,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task-2/lib/exceptions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task-1/lib/todo_list.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="34" selection-start="1961" selection-end="1961" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="122" column="34" selection-start="1961" selection-end="1961" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task-1/spec/todo_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="28" selection-start="3553" selection-end="3553" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="132" column="28" selection-start="3553" selection-end="3553" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task-2/spec/todo_list.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="30" selection-start="542" selection-end="542" vertical-scroll-proportion="0.53968257">
-          <folding />
+        <state line="12" column="30" selection-start="542" selection-end="542" vertical-scroll-proportion="0.53968257" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task-2/spec/todo_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="0" selection-start="5136" selection-end="5136" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#525#601#0" expanded="false" />
+            <element signature="e#629#964#0" expanded="false" />
+            <element signature="e#1000#2888#0" expanded="false" />
+            <element signature="e#2931#3086#0" expanded="false" />
+            <element signature="e#3003#3080#0" expanded="false" />
+            <element signature="e#3117#3304#0" expanded="false" />
+            <element signature="e#3343#3724#0" expanded="false" />
+            <element signature="e#4831#5134#0" expanded="false" />
+            <element signature="e#5175#5478#0" expanded="false" />
+            <element signature="e#5564#5899#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task-2/lib/todo_list.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="29" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task-2/spec/todo_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="32" selection-start="2210" selection-end="2210" vertical-scroll-proportion="0.3148148">
+        <state line="22" column="39" selection-start="529" selection-end="529" vertical-scroll-proportion="0.505291">
           <folding />
         </state>
       </provider>
