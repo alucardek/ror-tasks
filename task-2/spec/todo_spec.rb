@@ -139,7 +139,7 @@ describe TodoList do
     subject(:list)            { TodoList.new(db: database, socl: social_network) }
     #let(:social_network)      { mock!.spam(description) { true }.subject }
     let(:social_network)      { mock } #ALTERNATYWNE PODEJŚCIE - które lepsze?
-    let(:social_sufix)        { "- completed!"}
+    let(:social_suffix)        { " - completed!"}
 
     it "should notify a social network if an item is added to the list" do
       mock(database).add_todo_item( item )  {true}
@@ -155,7 +155,7 @@ describe TodoList do
       mock(database).get_todo_item (0) {item}
       mock(database).todo_item_completed?(0) { false }
       mock(database).complete_todo_item(0, true) {true}
-      mock(social_network).spam(description + social_sufix) {true}
+      mock(social_network).spam(description + social_suffix) {true}
 
       list << item
       list.toggle_state(0)
@@ -184,20 +184,32 @@ describe TodoList do
     end
 
     context "with notify longer than 255 characters" do
-      let(:description)     {"There are several ways to make navigation responsive, and usually the solution we need is quite straightforward. But despite the apparent simplicity, there are many underlying factors which, when thought through and implemented properly, can make a simple solution even better without adding more complexity to the user interface.
-"}
+      let(:description)     {"There are several ways to make navigation responsive, and usually the solution we need is quite straightforward. But despite the apparent simplicity, there are many underlying factors which, when thought through and implemented properly, can make a simple solution even better without adding more complexity to the user interface."}
+      # > 255 chars
+      let(:description_short)   {"There are several ways to make navigation responsive, and usually the solution we need is quite straightforward. But despite the apparent simplicity, there are many underlying factors which, when thought through and implemented properly, can make a s"}
+      # == 250 chars
+      let(:description_short_completed)   {"There are several ways to make navigation responsive, and usually the solution we need is quite straightforward. But despite the apparent simplicity, there are many underlying factors which, when thought through and implemented properly,"}
+      # == 237 chars (for complete action)
+      let(:suffix_255)   {"(...)"}
+
       it "should cut the title of the item when notifying the SN while adding an item" do
         mock(database).add_todo_item( item )  {true}
-        mock(social_network).spam(description) {true}
+        mock(social_network).spam(description_short + suffix_255) {true}
 
         list << item
       end
 
       it "should cut the title of the item when notifying the SN while completing the item" do
-        mock(database).add_todo_item( item )  {true}
-        mock(social_network).spam(description) {true}
+        mock(database).add_todo_item( item ) {true}
+        mock(social_network).spam(description_short + suffix_255) {true}
+
+        mock(database).get_todo_item (0) {item}
+        mock(database).todo_item_completed?(0) { false }
+        mock(database).complete_todo_item(0, true) {true}
+        mock(social_network).spam(description_short_completed + suffix_255 + social_suffix) {true}
 
         list << item
+        list.toggle_state(0)
       end
     end
 

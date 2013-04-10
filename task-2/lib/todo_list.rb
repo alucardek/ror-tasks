@@ -18,7 +18,7 @@ class TodoList
   def << (item)
     unless item.nil? || item.title.nil? || item.title.empty? || item.title.length < 5
       @db.add_todo_item(item)
-      message = (item.description.nil? ? nil : item.description )
+      message = item.description.nil? ? nil : (item.description.length>255 ? ( item.description[0...250] + "(...)" ) : item.description )
       @socl.spam(message) if @socl
     end
   end
@@ -37,7 +37,8 @@ class TodoList
       #@db.complete_todo_item(index, !@db.todo_item_completed?(index))  <= szybsze rozwiązanie gdy nie ma socl
       unless @db.todo_item_completed?(index)
         @db.complete_todo_item(index, true)
-        message = item.description + " - completed!" unless item.description.nil?
+        #message = item.description + " - completed!" unless item.description.nil?
+        message = item.description.nil? ? nil : (item.description.length>241 ? ( item.description[0...237] + "(...)" + " - completed!") : item.description + " - completed!" )
         @socl.spam( message ) if @socl
       else
         @db.complete_todo_item(index, false)
