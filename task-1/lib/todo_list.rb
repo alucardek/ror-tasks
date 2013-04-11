@@ -112,4 +112,20 @@ class TodoList
     @items.map {|item| item.completed? ? "[x] "+ item.to_s : "[ ] "+item.to_s }
   end
 
+  def completed?(index)
+    @items[index].completed?
+  end
+
+  def complete(index)
+    @items[index].complete
+  end
+
+  def uncomplete(index)
+    @items[index].uncomplete
+  end
+
+  def toggle(index)
+    @items[index].toggle
+  end
+
 end

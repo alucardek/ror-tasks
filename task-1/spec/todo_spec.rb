@@ -38,7 +38,7 @@ describe TodoList do
       list.completed?(0).should be_false
     end
   end
-  
+
   context "with one item" do
     let(:items)             { [item_description] }
 
@@ -65,9 +65,9 @@ describe TodoList do
       list.completed?(0).should be_true
     end
   end
-  
+
   context "with many items" do
-  	let(:items)            { [item_description, second_description, third_description] }
+    let(:items)            { [item_description, second_description, third_description] }
 
     it "should return completed items" do
       list.complete(2)
@@ -144,5 +144,5 @@ describe TodoList do
       list_converted.at(0).to_s.should == "[ ] "+item_description
     end
   end
-  
+
 end
