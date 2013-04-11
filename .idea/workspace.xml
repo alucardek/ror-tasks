@@ -6,7 +6,7 @@
     </list>
     <ignored path="ror-tasks.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="649a76b5-c5f6-4c3d-80c4-091525b70983" time="1365671966615" ignored="false" />
+    <file path="/Dummy.txt" changelist="649a76b5-c5f6-4c3d-80c4-091525b70983" time="1365671987255" ignored="false" />
     <file path="/todo_spec.rb" changelist="649a76b5-c5f6-4c3d-80c4-091525b70983" time="1365671684429" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -338,7 +338,11 @@
       <created>1365671971664</created>
       <updated>1365671971664</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="rortask2 alternatywna metoda">
+      <created>1365671991796</created>
+      <updated>1365671991796</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
