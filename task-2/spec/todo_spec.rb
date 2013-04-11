@@ -194,7 +194,8 @@ describe TodoList do
 
       it "should cut the title of the item when notifying the SN while adding an item" do
         mock(database).add_todo_item( item )  {true}
-        mock(social_network).spam(description_short + suffix_255) {true}
+        #mock(social_network).spam(description_short + suffix_255) {true}
+        mock(social_network).spam(description[0...250] + suffix_255) {true}
 
         list << item
       end
@@ -202,11 +203,11 @@ describe TodoList do
       it "should cut the title of the item when notifying the SN while completing the item" do
         mock(database).add_todo_item( item ) {true}
         mock(social_network).spam(description_short + suffix_255) {true}
-
         mock(database).get_todo_item (0) {item}
         mock(database).todo_item_completed?(0) { false }
         mock(database).complete_todo_item(0, true) {true}
         mock(social_network).spam(description_short_completed + suffix_255 + social_suffix) {true}
+
 
         list << item
         list.toggle_state(0)
