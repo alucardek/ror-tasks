@@ -1,3 +1,4 @@
 source "http://www.rubygems.org"
 
 gem 'rspec'
+gem "simple_delegator", "~> 0.0.2"

@@ -1,9 +1,10 @@
+require 'rspec'
 require 'bundler/setup'
 require 'rspec/expectations'
 require_relative '../lib/todo_list'
 require_relative '../lib/exceptions'
 
-describe TodoList do
+describe "TodoList" do
   subject(:list)            { TodoList.new(items) }
   let(:items)               { [] }
   let(:item_description)    { "Buy toilet paper" }
@@ -29,7 +30,7 @@ describe TodoList do
 
     it "should add the item to the end" do
       list << item_description
-      list.last.to_s.should == item_description
+      list.last.display_description.should == item_description
     end
 
 
@@ -38,7 +39,7 @@ describe TodoList do
       list.at(0).completed?.should be_false
     end
   end
-  
+
   context "with one item" do
     let(:items)             { [item_description] }
 
@@ -49,11 +50,11 @@ describe TodoList do
     end
 
     it "should select one item at particular position" do
-      list.at(0).to_s.should == item_description
+      list.at(0).display_description.should == item_description
     end
 
     it "should have the first and the last item the same" do
-      list.first.to_s.should == list.last.to_s
+      list.first.display_description.should == list.last.display_description
     end
 
     it "should not have the first item completed" do
@@ -65,30 +66,30 @@ describe TodoList do
       list.at(0).completed?.should be_true
     end
   end
-  
+
   context "with many items" do
-  	let(:items)            { [item_description, second_description, third_description] }
+    let(:items)            { [item_description, second_description, third_description] }
 
     it "should return completed items" do
       list.at(2).complete
       list.at(1).complete
       completed=list.show_completed
       completed.size.should == 2
-      completed.first.to_s.should == second_description
+      completed.first.display_description.should == second_description
     end
 
     it "should return uncompleted items" do
       list.at(0).complete
       list.at(2).complete
       uncompleted = list.show_uncompleted
-      uncompleted.first.to_s.should == second_description
+      uncompleted.first.display_description.should == second_description
       uncompleted.size.should ==1
     end
 
     it "should remove an invidual item" do
       list.remove(1)
       list.remove(1)
-      list.last.to_s.should == item_description
+      list.last.display_description.should == item_description
       list.last.should == list.first
       list.size.should ==1
     end
@@ -103,21 +104,21 @@ describe TodoList do
 
     it "should revert order of two items" do
       list.reverse(0,1)
-      list.first.to_s.should == second_description
+      list.first.display_description.should == second_description
     end
 
     it "should revert the order of all items" do
       list.reverse
-      list.first.to_s.should == third_description
-      list.last.to_s.should == item_description
+      list.first.display_description.should == third_description
+      list.last.display_description.should == item_description
     end
 
     it "should toggle the state of an item" do
       list.at(1).complete
-      list.show_completed.first.to_s.should == second_description
-      list.at(0).toggle
-      list.at(1).toggle
-      list.show_completed.first.to_s.should == item_description
+      list.show_completed.first.display_description.should == second_description
+      list.at(0).toggle_completness
+      list.at(1).toggle_completness
+      list.show_completed.first.display_description.should == item_description
     end
 
     it "should set the state of the item to uncompleted" do
@@ -128,21 +129,21 @@ describe TodoList do
 
     it "should change the description of an item" do
       list.at(2).description="aleluja"
-      list.last.to_s.should == "aleluja"
+      list.last.display_description.should == "aleluja"
     end
 
     it "should sort the items by name" do
       list.sort_by!("names")
-      list.at(2).to_s.should == second_description
+      list.at(2).display_description.should == second_description
     end
 
     it "should convert the list to text with the following format" do
       list.at(1).complete
-      list_converted=[]
-      list_converted=list.convertx
-      list_converted.at(1).to_s.should == "[x] "+second_description
-      list_converted.at(0).to_s.should == "[ ] "+item_description
+      list.completeness_reformating
+
+      list.completeness_reformating.at(1).should == "[x] " + second_description
+      list.completeness_reformating.at(0).should == "[ ] " + item_description
     end
   end
-  
+
 end
